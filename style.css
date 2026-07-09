@@ -1,0 +1,38 @@
+:root{
+    --accent: #6c8389;
+    --accent-light: #c4d6e0;
+}
+
+body{
+    margin: 0;
+}
+
+.menu-panel{
+    background-color: var(--accent);
+    width: 100%;
+    min-height: 48px;
+}
+
+.page{
+    min-width: 600px;
+    max-width: 900px;
+    min-height: 500px;
+    overflow-x: auto;
+    overflow-y: auto;
+    justify-self: center;
+}
+
+.page p{
+    max-width: 70ch;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    fill: var(--accent);
+}
+
+a{
+    text-decoration: none;
+    color: var(--accent-light);
+}
