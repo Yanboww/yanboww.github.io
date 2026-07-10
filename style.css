@@ -1,10 +1,12 @@
 :root{
     --accent: #6c8389;
     --accent-light: #c4d6e0;
+    --filler: #FFF9C4;
 }
 
 body{
     margin: 0;
+    background-color: var(--accent-light);
 }
 
 .menu-panel{
@@ -14,12 +16,26 @@ body{
 }
 
 .page{
-    min-width: 600px;
-    max-width: 900px;
+    width: min(1160px, 100vw);
+    background-color: white;
     min-height: 500px;
     overflow-x: auto;
     overflow-y: auto;
+    margin: 0 auto;
+}
+
+.title-section,
+.contact-section{
+    display: flex;
+    justify-content: center;
+}
+
+.content-section{
     justify-self: center;
+}
+
+.icon{
+    padding: 8px;
 }
 
 .page p{
