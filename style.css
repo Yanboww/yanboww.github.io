@@ -1,27 +1,55 @@
 :root{
     --accent: #6c8389;
     --accent-light: #c4d6e0;
-    --filler: #FFF9C4;
+    --page: #FFFDF8;         
+    --text: #26383D;   
+    --contrast: #fffdf1;  
+    --heading: #2E4A52;
 }
 
 body{
     margin: 0;
-    background-color: var(--accent-light);
+    background-image: url("/assets/bg.png");
+    background-color: var(--contrast);
 }
 
-.menu-panel{
+.menu-panel {
     background-color: var(--accent);
     width: 100%;
-    min-height: 48px;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.menu-panel img{
+    height: 67px;
+    width: auto;
+    display: block;
+}
+
+.menu-panel nav{
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
+}
+
+.menu-panel a{
+    text-decoration: none;
+    color: var(--page);
 }
 
 .page{
     width: min(1160px, 100vw);
-    background-color: white;
-    min-height: 500px;
+    background-color: var(--page);
+    min-height: 100dvh;
+    min-width: 700px;
     overflow-x: auto;
     overflow-y: auto;
     margin: 0 auto;
+    font-family: "Nunito", sans-serif;
 }
 
 .title-section,
@@ -50,5 +78,20 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--accent);
+}
+
+a:hover{
+
     color: var(--accent-light);
+}
+
+h1, h2, h3{
+    color: var(--heading);
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+    color: var(--text);
 }
