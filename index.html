@@ -13,30 +13,33 @@
 <body>
     <div class="page">
         <div class="menu-panel">
-            <a href ="index.html"><img src="/assets/brand.png" alt="Yanbo"></a>
+            <a href ="index.html"><img src="assets/brand.png" alt="Yanbo"></a>
             <nav>
-                <a href="projects.html">Projects</a>
-                <a href="blogs.html">Blogs</a>
+                <a href="pages/projects.html">Projects</a>
+                <a href="pages/blogs.html">Blogs</a>
+                <a href="pages/links.html">Links</a>
             </nav>
         </div>
+
         <div class="content-panel">
-            <div class="title-section">
-                <h1>WELCOME!</h1>
-            </div>
-            <div class="content-section">
-                <p>Hi, I am Yanbo! A CS student at Stony Brook University, and currently a lab assistant at the 
-                <a href="https://www.stonybrook.edu/commcms/electrical/undergraduate/laboratories/teaching_labs/embedded-systems-lab">Embedded Systems Design Lab.</a>
-                I am interested in competitive programming, embedded systems, and driver development (it's like magic)!
-                </p>
+            <section class="content-section">
+                <div class="content-text">
+                    <h1>WELCOME!</h1>
+                    <p>Hi, I am Yanbo! A CS student at Stony Brook University, and currently a lab assistant at the 
+                    <a href="https://www.stonybrook.edu/commcms/electrical/undergraduate/laboratories/teaching_labs/embedded-systems-lab">Embedded Systems Design Lab.</a>
+                    I am interested in competitive programming, embedded systems, and driver development (it's like magic)!
+                    </p>
     
-                <p>
-                    Right now, I am working on an online judge,  <a href="https://github.com/3nya/enyay-oj">enyay</a>,
-                    made entirely in rust, using Docker Engine. It is freely available on GitHub, so feel free to check it out!
-                </p>
-                <p>Outside of school, I enjoy playing video games, particularly sandboxes and gachas (😢), and taking long walks,
-                    especially after a long debugging session.
-                </p>
-            </div>
+                    <p>
+                        Right now, I am working on an online judge,  <a href="https://github.com/3nya/enyay-oj">enyay</a>,
+                        made entirely in rust, using Docker Engine. It is freely available on GitHub, so feel free to check it out!
+                    </p>
+                    <p>Outside of school, I enjoy playing video games, particularly sandboxes and gachas (😢).
+                    </p>
+                </div>
+
+                <img class="hero-img" src="assets/bg.png">
+            </section>
 
             <div class="contact-section">
                 <a href="https://www.linkedin.com/in/yanbo-wang-297aa0345/" aria-label="LinkedIn">
@@ -54,6 +57,28 @@
                         <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path>
                     </svg>
                 </a>
+            </div>
+            <hr>
+
+            <div class="recent-activities">
+                <h1>Recent Activities</h1>
+
+                <section class = "news">
+                    <h2>May 28, 2026</h2>
+                    <div class="news-content">
+                        <img src="assets/enyay-mascot.png" alt="enyay" style="width: 50px; height: 50px;">
+                        <p>Started working on <a href="https://github.com/3nya/enyay-oj">enyay-oj</a>, a Rust online judge. You can find out more on GitHub!</p>
+                    </div>
+                </section>
+
+                <section class = "news">
+                    <h2>Feb 19, 2026</h2>
+                    <div class="news-content">
+                        <img src="assets/icpc.png" alt="icpc.foundation" style="width: 50px; height: 50px;">
+                        <p>I joined the ICPC foundation as a problem solving intern! Check out my <a href="https://github.com/Yanboww/Codeforces">Codeforces repositiory</a> to see some of my solutions!
+                        </p>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
