@@ -14,7 +14,17 @@
     <div class="page">
         <div class="menu-panel">
             <a href ="index.html"><img src="assets/brand.png" alt="Yanbo"></a>
-            <nav>
+            
+            <button class="nav-toggle"
+                aria-label="Toggle Navigation"
+                aria-expanded="false"
+                aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav">
                 <a href="pages/projects.html">Projects</a>
                 <a href="pages/blogs.html">Blogs</a>
                 <a href="pages/links.html">Links</a>
@@ -24,7 +34,7 @@
         <div class="content-panel">
             <section class="content-section">
                 <div class="content-text">
-                    <h1>WELCOME!</h1>
+                    <h1 class="page-title">WELCOME!</h1>
                     <p>Hi, I am Yanbo! A CS student at Stony Brook University, and currently a lab assistant at the 
                     <a href="https://www.stonybrook.edu/commcms/electrical/undergraduate/laboratories/teaching_labs/embedded-systems-lab">Embedded Systems Design Lab.</a>
                     I am interested in competitive programming, embedded systems, and driver development (it's like magic)!
@@ -74,7 +84,7 @@
                 <section class = "news">
                     <h2>Feb 19, 2026</h2>
                     <div class="news-content">
-                        <img src="assets/icpc.png" alt="icpc.foundation" style="width: 50px; height: 50px;">
+                        <img src="assets/icpc.png" alt="icpc.foundation" style="width: 50px; height: 40px;">
                         <p>I joined the ICPC foundation as a problem solving intern! Check out my <a href="https://github.com/Yanboww/Codeforces">Codeforces repositiory</a> to see some of my solutions!
                         </p>
                     </div>
@@ -82,8 +92,6 @@
             </div>
         </div>
     </div>
-<script>
-
-</script>
+<script src="app.js"></script>
 </body>
 </html>

@@ -41,6 +41,10 @@ body{
     color: var(--page);
 }
 
+.nav-toggle {
+    display: none;
+}
+
 .page{
     width: min(1160px, 100vw);
     background-color: var(--page);
@@ -133,5 +137,53 @@ hr{
     .hero-img {
         width: min(280px, 100%);
         justify-self: center;
+    }
+
+    .page-title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px){
+    .menu-panel{
+        position: relative;
+    }
+
+    .nav-toggle {
+        display: grid;
+        gap: 5px;
+        margin-left: auto;
+        padding: 8px;
+        border: 0;
+        background: transparent;
+        color: var(--page);
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        width: 24px;
+        height: 2px;
+        background: currentColor;
+    }
+
+    .menu-panel nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 16px 24px;
+        flex-direction: column;
+        background-color: var(--accent);
+        align-items: center;
+    }
+
+    .menu-panel nav.is-open{
+        display: flex;
+    }
+
+    .menu-panel a{
+        font-size: 24px;
     }
 }

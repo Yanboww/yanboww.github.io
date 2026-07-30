@@ -14,15 +14,26 @@
     <div class="page">
         <div class="menu-panel">
             <a href ="../index.html"><img src="../assets/brand.png" alt="Yanbo"></a>
-            <nav>
+            <button class="nav-toggle"
+                aria-label="Toggle Navigation"
+                aria-expanded="false"
+                aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav">
                 <a href="projects.html">Projects</a>
                 <a href="blogs.html">Blogs</a>
                 <a href="links.html">Links</a>
             </nav>
         </div>
-    </div>
-<script>
 
-</script>
+        <div class="content-panel">
+            <h1 class="page-title">BLOGS</h1>
+        </div>
+    </div>
+<script src="../app.js"></script>
 </body>
 </html>
