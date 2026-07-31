@@ -102,6 +102,7 @@ body{
     justify-content: center;
     margin-top: 24px ;
 }
+
 .news-content{
     display: flex;
     align-items: center;
@@ -158,9 +159,27 @@ hr{
 
 .more-next{
     display: block;
+    width: 220px;
+    max-width: calc(100% - 48px);
+    height: auto;
+    margin: 48px auto;
+}
+
+.footer-icon{
+    display: block;
     width: 100px;
     height: auto;
-    margin: 32px auto;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.footer-area{
+    width: 230px;
+    height: 230px;
+    margin: -32px auto 32px;
+    display: grid;
+    place-items: center;
+    overflow: clip;
 }
 
 @media (max-width: 800px) {
@@ -185,6 +204,10 @@ hr{
 
     .page-title{
         text-align: center;
+    }
+
+    .sub-title{
+        font-size: 32px;
     }
 
     .content-panel p, h2, h3{
